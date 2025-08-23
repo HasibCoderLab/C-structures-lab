@@ -31,7 +31,14 @@ int main(){
     printf("Student Name %s\n" , s2.name);
     printf("student roll no : %d\n" , s2.roll);
     printf("Student cgpa :%f\n" , s2.cgpa);
-
+   // 3rd Student
+   struct student s3;
+   strcpy(s3.name , "Web Developer");
+   s3.roll = 106;
+   s3.cgpa = 3.5;
+   printf("Student Name : %s\n" , s3.name);
+   printf("Student  roll no : %d\n" , s3.roll);
+   printf("Student cgpa %f\n" , s3.cgpa);
     return 0;
 }
 
