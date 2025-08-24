@@ -27,24 +27,39 @@
 
 //  🎯 
 
+// #include <stdio.h>
+// #include <string.h>
+// // user Difined 
+// struct student {
+// char name [13] ;
+// int roll;
+// float cgpa;
+// };
+// int main(){
+//     struct student CSE[152];
+//     strcpy(CSE[0].name , "Programmer");
+//     CSE[0].roll = 125;
+//     CSE[0].cgpa = 3.6;
+//     printf("Student name is %s\n" , CSE[0].name);
+//     printf("Student roll : %d\n " , CSE[0].roll);
+//     printf("Student cgpa : %f\n" , CSE[0].cgpa);
+
+//     return 0 ;
+// }
+
+// 🛑 Initializing   Structure 
 #include <stdio.h>
 #include <string.h>
-// user Difined 
-struct student {
-char name [13] ;
+// User Difined
+struct student{
+char name [20];
 int roll;
 float cgpa;
 };
 int main(){
-    struct student CSE[152];
-    strcpy(CSE[0].name , "Programmer");
-    CSE[0].roll = 125;
-    CSE[0].cgpa = 3.6;
-    printf("Student name is %s\n" , CSE[0].name);
-    printf("Student roll : %d\n " , CSE[0].roll);
-    printf("Student cgpa : %f\n" , CSE[0].cgpa);
-
-    return 0 ;
+    struct  student  s1= {"coder" , 630, 3.5};
+    printf("Student name is %s\n , student roll : %d\n , student cgpa %f\n" , s1.name, s1.roll, s1.cgpa);
+    return 0;
 }
 
 // #include <stdio.h>
