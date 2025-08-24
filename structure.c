@@ -85,20 +85,43 @@
 
 // 🛑  arrow Operator
 
+// #include <stdio.h>
+// // user Defined 
+// struct student {
+// char name [20];
+// int roll;
+// float cgpa;
+// };
+// int main(){
+//     struct student s01 = {"Fahim" , 220 , 3.2};
+//     struct student *ptr =  &s01;
+//     printf("Student name -> %s\n" , ptr->name);
+//     printf("Student roll is -> %d\n" , ptr->roll);
+//     printf("Student cgpa -> %f\n" , ptr->cgpa);
+//     return 0;
+// }
+
+// 🛑    Passing structure  to function  | Call by value 🌟 🌟 |
+
 #include <stdio.h>
-// user Defined 
+// userr Defined 
 struct student {
-char name [20];
+char name[23];
 int roll;
 float cgpa;
 };
+void printInfo(struct student s1);
+
 int main(){
-    struct student s01 = {"Fahim" , 220 , 3.2};
-    struct student *ptr =  &s01;
-    printf("Student name -> %s\n" , ptr->name);
-    printf("Student roll is -> %d\n" , ptr->roll);
-    printf("Student cgpa -> %f\n" , ptr->cgpa);
+    struct student s1 = {"Web Developor" , 203, 3.8};
+    printInfo(s1);
     return 0;
+}
+void printInfo(struct student s1){
+    printf("Print Student Information :");
+printf("Student name is : %s\n", s1.name);
+printf("Student roll : %d\n" , s1.roll);
+printf("Student cgpa: %f\n" , s1.cgpa);
 }
 
 // #include <stdio.h>
