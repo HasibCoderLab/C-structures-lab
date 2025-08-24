@@ -45,79 +45,99 @@
 
 // 👉👉 🔹🔹Question 2️⃣ Enter address  (house no , block , city ,state) of 5 people
 
-#include <stdio.h>
-struct address {
-int houseNo;
-int block;
-char city[50];
-char state[50];
-};
-void printAdds(struct address  adds);
-int main(){
-struct address adds[5];
-// input  for  1st Person
-printf("Enter Info For 1st Person :");
-scanf("%d" ,&adds[0].houseNo);
-scanf("%d"  , &adds[0].block);
-scanf("%s" , adds[0].city);
-scanf("%s" , adds[0].state);
-
-// input  for  2nd Person
-
-printf("Enter Info For 2nd Person :");
-scanf("%d" ,&adds[1].houseNo);
-scanf("%d" ,&adds[1].block);
-scanf("%s" , adds[1].city);
-scanf("%s" , adds[1].state);
-
-// input  for  3rd  Person
-
-printf("Enter Info For 3rd  Person :");
-scanf("%d" ,&adds[2].houseNo);
-scanf("%d" ,&adds[2].block);
-scanf("%s" , adds[2].city);
-scanf("%s" , adds[2].state);
-
-// input  for  4th  Person
-
-
-printf("Enter Info For 4th  Person :");
-scanf("%d" ,&adds[3].houseNo);
-scanf("%d" ,&adds[3].block);
-scanf("%s" , adds[3].city);
-scanf("%s" , adds[3].state);
-
-// input  for  5th  Person
-
-
-printf("Enter Info For 5th  Person :");
-scanf("%d" ,&adds[4].houseNo);
-scanf("%d" ,&adds[4].block);
-scanf("%s" , adds[4].city);
-scanf("%s" , adds[4].state);
-
-
-
-printAdds(adds[0]);
-printAdds(adds[1]);
-printAdds(adds[2]);
-printAdds(adds[3]);
-printAdds(adds[4]);
-
-    return 0;
-}
-// Function Definition
-void printAdds(struct address  adds){
-    printf("address is :%d,%d,%s,%s\n" , adds.houseNo , adds.block, adds.city, adds.state );
-}
-
-
 // #include <stdio.h>
+// struct address {
+// int houseNo;
+// int block;
+// char city[50];
+// char state[50];
+// };
+// void printAdds(struct address  adds);
 // int main(){
-    // return 0;
+// struct address adds[5];
+// // input  for  1st Person
+// printf("Enter Info For 1st Person :");
+// scanf("%d" ,&adds[0].houseNo);
+// scanf("%d"  , &adds[0].block);
+// scanf("%s" , adds[0].city);
+// scanf("%s" , adds[0].state);
+
+// // input  for  2nd Person
+
+// printf("Enter Info For 2nd Person :");
+// scanf("%d" ,&adds[1].houseNo);
+// scanf("%d" ,&adds[1].block);
+// scanf("%s" , adds[1].city);
+// scanf("%s" , adds[1].state);
+
+// // input  for  3rd  Person
+
+// printf("Enter Info For 3rd  Person :");
+// scanf("%d" ,&adds[2].houseNo);
+// scanf("%d" ,&adds[2].block);
+// scanf("%s" , adds[2].city);
+// scanf("%s" , adds[2].state);
+
+// // input  for  4th  Person
+
+
+// printf("Enter Info For 4th  Person :");
+// scanf("%d" ,&adds[3].houseNo);
+// scanf("%d" ,&adds[3].block);
+// scanf("%s" , adds[3].city);
+// scanf("%s" , adds[3].state);
+
+// // input  for  5th  Person
+
+
+// printf("Enter Info For 5th  Person :");
+// scanf("%d" ,&adds[4].houseNo);
+// scanf("%d" ,&adds[4].block);
+// scanf("%s" , adds[4].city);
+// scanf("%s" , adds[4].state);
+
+
+
+// printAdds(adds[0]);
+// printAdds(adds[1]);
+// printAdds(adds[2]);
+// printAdds(adds[3]);
+// printAdds(adds[4]);
+
+//     return 0;
+// }
+// // Function Definition
+// void printAdds(struct address  adds){
+//     printf("address is :%d,%d,%s,%s\n" , adds.houseNo , adds.block, adds.city, adds.state );
 // }
 
 
-// //  // 👉👉  🔹🔹  Question 1️⃣
+// 👉👉  🔹🔹  Question 3️⃣  Create a structure to store  vector . 
+// Then make a funtion  to return sum of 2 vector 
+
+#include <stdio.h>
+struct vector{
+int x;
+int y;
+};
+void calsum(struct vector v1 , struct vector v2 , struct vector sum );
+int main(){
+   struct vector v1 = {3,4};
+   struct vector v2 = {4,6};
+   struct vector sum = {0};
+  calsum(v1,v2,sum);
+    return 0;
+}
+// Function Definition
+void calsum(struct vector v1 , struct vector v2 , struct vector sum ){
+sum.x = v1.x + v2.x;
+sum.y = v1.y + v2.y;
+printf("Sum of X : %d\n" ,sum.x );
+printf("Sum of Y  : %d\n" , sum.y);
+
+}
+
+
+// //  // 👉👉  🔹🔹  Question 3️⃣
 // Emoji
 // // 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
