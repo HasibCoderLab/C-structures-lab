@@ -47,18 +47,37 @@
 //     return 0 ;
 // }
 
-// 🛑 Initializing   Structure 
+// // 🛑 Initializing   Structure 
+// #include <stdio.h>
+// #include <string.h>
+// // User Difined
+// struct student{
+// char name [20];
+// int roll;
+// float cgpa;
+// };
+// int main(){
+//     struct  student  s1= {"coder" , 630, 3.5};
+//     printf("Student name is %s\n , student roll : %d\n , student cgpa %f\n" , s1.name, s1.roll, s1.cgpa);
+//     return 0;
+// }
+
+
+
+// 🛑  Ponter Operator
+
 #include <stdio.h>
 #include <string.h>
-// User Difined
-struct student{
-char name [20];
+// user difined 
+struct student {
+char name[20];
 int roll;
 float cgpa;
 };
 int main(){
-    struct  student  s1= {"coder" , 630, 3.5};
-    printf("Student name is %s\n , student roll : %d\n , student cgpa %f\n" , s1.name, s1.roll, s1.cgpa);
+    struct student s1 = {"Hsaan" , 152, 3.6};
+    struct student *ptr = &s1;
+    printf("Student name is : %s\n" , (*ptr).name);
     return 0;
 }
 
