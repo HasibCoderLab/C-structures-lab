@@ -103,25 +103,52 @@
 
 // 🛑    Passing structure  to function  | Call by value 🌟 🌟 |
 
+// #include <stdio.h>
+// // userr Defined 
+// struct student {
+// char name[23];
+// int roll;
+// float cgpa;
+// };
+// void printInfo(struct student s1);
+
+// int main(){
+//     struct student s1 = {"Web Developor" , 203, 3.8};
+//     printInfo(s1);
+//     return 0;
+// }
+// void printInfo(struct student s1){
+//     printf("Print Student Information :");
+// printf("Student name is : %s\n", s1.name);
+// printf("Student roll : %d\n" , s1.roll);
+// printf("Student cgpa: %f\n" , s1.cgpa);
+// }
+
+// 🛑    Passing structure  to function  | Call by Reference 🌟 🌟 |
 #include <stdio.h>
-// userr Defined 
+// user Difined
 struct student {
-char name[23];
+char name [32];
 int roll;
 float cgpa;
 };
 void printInfo(struct student s1);
-
 int main(){
-    struct student s1 = {"Web Developor" , 203, 3.8};
-    printInfo(s1);
+    struct student s1 = {"Programmer" , 302 , 3.4};
+    printInfo(s1); // Function call
+
+
+    s1.roll = 303;
+    printf("Student roll ; %d\n" , s1.roll);
     return 0;
 }
+// Function Definition
 void printInfo(struct student s1){
-    printf("Print Student Information :");
-printf("Student name is : %s\n", s1.name);
-printf("Student roll : %d\n" , s1.roll);
-printf("Student cgpa: %f\n" , s1.cgpa);
+printf("print Information : ");
+printf("Student Name is : %s\n" , s1.name);
+printf("Student roll ; %d\n" , s1.roll);
+printf("Student cgpa : %f\n" , s1.cgpa);
+s1.roll = 303;
 }
 
 // #include <stdio.h>
