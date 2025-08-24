@@ -77,9 +77,14 @@ float cgpa;
 int main(){
     struct student s1 = {"Hsaan" , 152, 3.6};
     struct student *ptr = &s1;
-    printf("Student name is : %s\n" , (*ptr).name);
+    printf("Student name wirh ptr : %s\n" , (*ptr).name);
+    printf("Student roll  with ptr: %d\n" , (*ptr).roll);
+    printf("student cgp with ptr %f\n " , (*ptr).cgpa);
     return 0;
 }
+
+// 🛑  arrow Operator
+
 
 // #include <stdio.h>
 // int main(){
