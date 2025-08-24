@@ -6,45 +6,110 @@
 
 // 👉👉 🔹🔹Question 1️⃣  write a program to store the data  of 3 students
 
+// #include <stdio.h>
+// #include <string.h>
+// // user difined
+// struct student{
+// char name[100];
+// int roll;
+// float cgpa;
+// };
+// int main(){
+//     // 1st Student 
+//     struct student s1 ;
+//     strcpy(s1.name , "Coder");
+//     s1.roll = 101;
+//     s1.cgpa = 3.6;
+//     printf("student name = %s\n" , s1.name);
+//     printf("Student roll no : %d\n", s1.roll);
+//     printf("Student cgpa : %f\n" , s1.cgpa);
+//     // 2d Student 
+//     struct student s2;
+//     strcpy(s2.name , "Programmer");
+//     s2.roll = 103;
+//     s2.cgpa = 3.4;
+//     printf("Student Name %s\n" , s2.name);
+//     printf("student roll no : %d\n" , s2.roll);
+//     printf("Student cgpa :%f\n" , s2.cgpa);
+//    // 3rd Student
+//    struct student s3;
+//    strcpy(s3.name , "Web Developer");
+//    s3.roll = 106;
+//    s3.cgpa = 3.5;
+//    printf("Student Name : %s\n" , s3.name);
+//    printf("Student  roll no : %d\n" , s3.roll);
+//    printf("Student cgpa %f\n" , s3.cgpa);
+//     return 0;
+// }
+
+
+// 👉👉 🔹🔹Question 2️⃣ Enter address  (house no , block , city ,state) of 5 people
+
 #include <stdio.h>
-#include <string.h>
-// user difined
-struct student{
-char name[100];
-int roll;
-float cgpa;
+struct address {
+int houseNo;
+int block;
+char city[50];
+char state[50];
 };
+void printAdds(struct address  adds);
 int main(){
-    // 1st Student 
-    struct student s1 ;
-    strcpy(s1.name , "Coder");
-    s1.roll = 101;
-    s1.cgpa = 3.6;
-    printf("student name = %s\n" , s1.name);
-    printf("Student roll no : %d\n", s1.roll);
-    printf("Student cgpa : %f\n" , s1.cgpa);
-    // 2d Student 
-    struct student s2;
-    strcpy(s2.name , "Programmer");
-    s2.roll = 103;
-    s2.cgpa = 3.4;
-    printf("Student Name %s\n" , s2.name);
-    printf("student roll no : %d\n" , s2.roll);
-    printf("Student cgpa :%f\n" , s2.cgpa);
-   // 3rd Student
-   struct student s3;
-   strcpy(s3.name , "Web Developer");
-   s3.roll = 106;
-   s3.cgpa = 3.5;
-   printf("Student Name : %s\n" , s3.name);
-   printf("Student  roll no : %d\n" , s3.roll);
-   printf("Student cgpa %f\n" , s3.cgpa);
+struct address adds[5];
+// input  for  1st Person
+printf("Enter Info For 1st Person :");
+scanf("%d" ,&adds[0].houseNo);
+scanf("%d"  , &adds[0].block);
+scanf("%s" , adds[0].city);
+scanf("%s" , adds[0].state);
+
+// input  for  2nd Person
+
+printf("Enter Info For 2nd Person :");
+scanf("%d" ,&adds[1].houseNo);
+scanf("%d" ,&adds[1].block);
+scanf("%s" , adds[1].city);
+scanf("%s" , adds[1].state);
+
+// input  for  3rd  Person
+
+printf("Enter Info For 3rd  Person :");
+scanf("%d" ,&adds[2].houseNo);
+scanf("%d" ,&adds[2].block);
+scanf("%s" , adds[2].city);
+scanf("%s" , adds[2].state);
+
+// input  for  4th  Person
+
+
+printf("Enter Info For 4th  Person :");
+scanf("%d" ,&adds[3].houseNo);
+scanf("%d" ,&adds[3].block);
+scanf("%s" , adds[3].city);
+scanf("%s" , adds[3].state);
+
+// input  for  5th  Person
+
+
+printf("Enter Info For 5th  Person :");
+scanf("%d" ,&adds[4].houseNo);
+scanf("%d" ,&adds[4].block);
+scanf("%s" , adds[4].city);
+scanf("%s" , adds[4].state);
+
+
+
+printAdds(adds[0]);
+printAdds(adds[1]);
+printAdds(adds[2]);
+printAdds(adds[3]);
+printAdds(adds[4]);
+
     return 0;
 }
-
-
-
-
+// Function Definition
+void printAdds(struct address  adds){
+    printf("address is :%d,%d,%s,%s\n" , adds.houseNo , adds.block, adds.city, adds.state );
+}
 
 
 // #include <stdio.h>
