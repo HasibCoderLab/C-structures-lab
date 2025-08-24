@@ -5,24 +5,46 @@
 //               * Topic: Structures
 // ===============================================
 
+// #include <stdio.h>
+// #include <string.h>
+// // user difined
+// struct student {
+// char name[100];
+// int roll;
+// float cgpa;
+// };
+// int main(){
+//     struct student s1 ;
+//     strcpy(s1.name , "PaniWala");
+//     s1.roll = 120;
+//     s1.cgpa = 3.2;
+//     printf("student name is %s\n" , s1.name);
+//     printf("student roll is %d\n" , s1.roll);
+//     printf("student name is %f\n" , s1.cgpa);
+
+//     return 0;
+// }
+
+//  🎯 
+
 #include <stdio.h>
 #include <string.h>
-// user difined
+// user Difined 
 struct student {
-char name[100];
+char name [13] ;
 int roll;
 float cgpa;
 };
 int main(){
-    struct student s1 ;
-    strcpy(s1.name , "PaniWala");
-    s1.roll = 120;
-    s1.cgpa = 3.2;
-    printf("student name is %s\n" , s1.name);
-    printf("student roll is %d\n" , s1.roll);
-    printf("student name is %f\n" , s1.cgpa);
+    struct student CSE[152];
+    strcpy(CSE[0].name , "Programmer");
+    CSE[0].roll = 125;
+    CSE[0].cgpa = 3.6;
+    printf("Student name is %s\n" , CSE[0].name);
+    printf("Student roll : %d\n " , CSE[0].roll);
+    printf("Student cgpa : %f\n" , CSE[0].cgpa);
 
-    return 0;
+    return 0 ;
 }
 
 // #include <stdio.h>
