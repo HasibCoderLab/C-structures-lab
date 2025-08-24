@@ -120,22 +120,21 @@ struct vector{
 int x;
 int y;
 };
-void calsum(struct vector v1 , struct vector v2 , struct vector sum );
+void calSum(struct vector v1 , struct vector v2 ,struct vector sum);
 int main(){
-   struct vector v1 = {3,4};
-   struct vector v2 = {4,6};
-   struct vector sum = {0};
-  calsum(v1,v2,sum);
+    struct vector v1 = {7,5};
+    struct vector v2 = {5,9};
+    struct vector sum = {0};
+calSum(v1,v2,sum);
     return 0;
 }
-// Function Definition
-void calsum(struct vector v1 , struct vector v2 , struct vector sum ){
-sum.x = v1.x + v2.x;
-sum.y = v1.y + v2.y;
-printf("Sum of X : %d\n" ,sum.x );
-printf("Sum of Y  : %d\n" , sum.y);
-
+void calSum(struct vector v1 , struct vector v2 ,struct vector sum){
+sum.x = v1.x+ v2.x;
+sum.y = v2.y + v2.y;
+printf("Value of X = %d\n" , sum.x);
+printf("Value of Y  = %d\n"  , sum.y);
 }
+
 
 
 // //  // 👉👉  🔹🔹  Question 3️⃣
