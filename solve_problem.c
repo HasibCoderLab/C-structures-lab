@@ -115,27 +115,43 @@
 // 👉👉  🔹🔹  Question 3️⃣  Create a structure to store  vector . 
 // Then make a funtion  to return sum of 2 vector 
 
+// #include <stdio.h>
+// struct vector{
+// int x;
+// int y;
+// };
+// void calSum(struct vector v1 , struct vector v2 ,struct vector sum);
+// int main(){
+//     struct vector v1 = {7,5};
+//     struct vector v2 = {5,9};
+//     struct vector sum = {0};
+// calSum(v1,v2,sum);
+//     return 0;
+// }
+// void calSum(struct vector v1 , struct vector v2 ,struct vector sum){
+// sum.x = v1.x+ v2.x;
+// sum.y = v2.y + v2.y;
+// printf("Value of X = %d\n" , sum.x);
+// printf("Value of Y  = %d\n"  , sum.y);
+// }
+
+// //  // 👉👉  🔹🔹  Question 4️⃣  create a structure a to store copmlex number .(use arrow operator)
+
+
 #include <stdio.h>
-struct vector{
-int x;
-int y;
+// user Difined
+struct copmlex{
+    int real;
+    int img;
 };
-void calSum(struct vector v1 , struct vector v2 ,struct vector sum);
 int main(){
-    struct vector v1 = {7,5};
-    struct vector v2 = {5,9};
-    struct vector sum = {0};
-calSum(v1,v2,sum);
+
+    struct copmlex number1 = {10,5};
+    struct copmlex *ptr = &number1;
+    printf("Real part -> %d\n" , ptr->real);
+    printf("img part -> %d\n" , ptr->img);
     return 0;
 }
-void calSum(struct vector v1 , struct vector v2 ,struct vector sum){
-sum.x = v1.x+ v2.x;
-sum.y = v2.y + v2.y;
-printf("Value of X = %d\n" , sum.x);
-printf("Value of Y  = %d\n"  , sum.y);
-}
-
-
 
 // //  // 👉👉  🔹🔹  Question 3️⃣
 // Emoji
